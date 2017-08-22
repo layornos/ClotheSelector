@@ -1,11 +1,13 @@
+/home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/rest/ApplicationConfig.java
+/home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/database/DatabaseConnection.java
+/home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/rest/DeleteOutfitService.java
 /home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/rest/GetAllOutfitsService.java
 /home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/rest/SelectOutfitsService.java
 /home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/OutfitHandler.java
 /home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/rest/AddOutfitService.java
+/home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/rest/FileResource.java
 /home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/database/Credentials.java
 /home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/Season.java
 /home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/Outfit.java
-/home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/database/DatabaseConnection.java
-/home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/rest/DeleteOutfitService.java
 /home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/database/MySQLConnection.java
 /home/layornos/eclipse-workspace/ClotheSelector/src/de/layornos/clotheselector/App.java

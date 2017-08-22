@@ -1,11 +1,13 @@
 de/layornos/clotheselector/OutfitHandler.class
-de/layornos/clotheselector/database/MySQLConnection.class
-de/layornos/clotheselector/database/Credentials.class
 de/layornos/clotheselector/rest/AddOutfitService.class
+de/layornos/clotheselector/rest/FileResource.class
 de/layornos/clotheselector/database/DatabaseConnection.class
 de/layornos/clotheselector/Season.class
 de/layornos/clotheselector/App.class
+de/layornos/clotheselector/Outfit.class
+de/layornos/clotheselector/rest/ApplicationConfig.class
+de/layornos/clotheselector/database/MySQLConnection.class
+de/layornos/clotheselector/database/Credentials.class
 de/layornos/clotheselector/rest/SelectOutfitsService.class
 de/layornos/clotheselector/rest/DeleteOutfitService.class
 de/layornos/clotheselector/rest/GetAllOutfitsService.class
-de/layornos/clotheselector/Outfit.class

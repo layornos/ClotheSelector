@@ -3,16 +3,28 @@
  */
 
 function addOutfit() {
-	var outfit = $("#outfit")[0].value;
-	console.lol(outfit);
-	var occasion = $('#occasion').value;
-	var season = $('#season').value;
-	var rain = $('rain').value;
+	var outfit = $('#outfit').val();
+	var occasion = $('#occasion').val();
+	var season = $('#season').val();
+	var rain = $('#rain').is(':checked');
+	if(rain){
+		rain = 1;
+	} else {
+		rain = 0;
+	} 
 	
+		
+//    console.log(rain);
 	
+	var url = "http://localhost:8080/ClotheSelector/outfits/addoutfitservice/"+outfit+"/"+season+"/"+rain+"/"+occasion;
+	console.log(url);
     var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "http://localhost:8080/clotheselector/outfits/addoutfitservice/"+outfit+"/"+season+"/"+rain+"/"+occasion, false);
-    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.open("GET", url, false);
+    xhttp.setRequestHeader("Content-type", "text/plain");
     xhttp.send();
-    var response = JSON.parse(xhttp.responseText);
+    var response = (xhttp.responseText);
+    console.log(response);
 }
+
+//http://127.0.0.1:8080/ClotheSelector/outfits/addoutfitservice/OutfitIAEIAE/SUMMER/1/Freizeit
+//http://localhost:8080/clotheselector/outfits/addoutfitservice/Stuff/       WINTER/0/Freizeit

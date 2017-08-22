@@ -7,19 +7,22 @@
 <script type="text/javascript" src="outfit_control.js"></script>
 </head>
 <body>
-<form>
-<h1>Add Outfit</h1><br>
-  Outfit<br>
-  <input type="text" name="outfit"><br>
-  Season<br>
-  <input type="text" name="season"><br>
-  Occasion<br>
-  <input type="text" name="occasion"><br>
-  Rain<br>
-  <input type="checkbox" name="rain"><br>
-  Image<br>
-  <input type="file" name="path" accept="image/x-png,image/gif,image/jpeg"><br><br>
-  <button type="submit" onclick="addOutfit()">Search</button>
-</form>
+
+	<form action="outfits/restwb/upload" method="post"
+		enctype="multipart/form-data">
+		File : <input type="file" name="upload" size="50" /> <br /> <input
+			type="submit" value="Upload" />
+	</form>
+
+	<form action="outfits/restwb/upload" method="post" enctype="multipart/form-data">
+		<h1>Add Outfit</h1>
+		<br> Outfit<br> <input type="text" id="outfit" name="outfit"><br>
+		Season<br> <input type="text" id="season" name="season"><br>
+		Occasion<br> <input type="text" id="occasion" name="occasion"><br>
+		Rain<br> <input type="checkbox" id="rain" name="rain"><br>
+		Image<br> <input type="file" id="path" name="path"
+			accept="image/x-png,image/gif,image/jpeg"><br>
+		<br> <input type="submit" />
+	</form>
 </body>
 </html>
