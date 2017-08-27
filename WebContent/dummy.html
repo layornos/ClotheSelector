@@ -1,22 +1,39 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>ClotheSelector - Outfits</title>
+<script src="/ClotheSelector/jquery.js"></script>
+<script src="/ClotheSelector/trashButton.js"></script>
+<link rel="stylesheet" type="text/css" href="all.css">
+<title>Clothe Selector</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/ClotheSelector/all.css">
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
-<form action="outfits/search/outfit" method="post"
-		enctype="multipart/form-data">
-		<h1>Search Outfit</h1>
-		Season<br> <select name="season">
-			<option value="SPRING">Spring</option>
-			<option value="SUMMER">Summer</option>
-			<option value="AUTUMN">Autumn</option>
-			<option value="WINTER">Winter</option>
-		</select><br> 
-		Occasion<br> <input type="text" id="occasion" name="occasion"><br>
-		Rain<br> <input type="checkbox" id="rain" name="rain"><br>
-		<input type="submit" value="Search Outfit" />
-	</form>
+	<div class="w3-container w3-text-teal">
+		<h1>Clothe Selector</h1>
+	</div>
+	<div class="w3-container">
+		<h2>Deine Outfits</h2>
+		<div class="w3-display-container">
+			<div class="w3-container w3-display-middle">
+				<h5>
+					Du hast noch <br>keine passenden Outfits <br>hochgeladen!
+				</h5>
+			</div>
+			<button class="w3-button w3-display-left w3-tear"
+				onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-display-right w3-tear"
+				onclick="plusDivs(1)">&#10095;</button>
+		</div>
+		<div class="w3-display-container">
+			<button class="w3-button w3-display-right w3-tear" title="Delete"
+				onclick="return goto()">Delete</button>
+		</div>
 </body>
 </html>
