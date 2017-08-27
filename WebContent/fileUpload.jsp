@@ -6,7 +6,7 @@
 <body>
 	 Upload File Demo<br/><br/>
 	<form action="outfits/restwb/upload" method="post" enctype="multipart/form-data">
- 		 File : <input type="file" name="upload" size="50" />
+ 		 File : <input type="file" name="filename" size="50" />
 	  <br/>
  	   <input type="submit" value="Upload" />
 	</form>

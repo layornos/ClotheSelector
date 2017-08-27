@@ -26,5 +26,7 @@ function addOutfit() {
     console.log(response);
 }
 
+
+
 //http://127.0.0.1:8080/ClotheSelector/outfits/addoutfitservice/OutfitIAEIAE/SUMMER/1/Freizeit
 //http://localhost:8080/clotheselector/outfits/addoutfitservice/Stuff/       WINTER/0/Freizeit

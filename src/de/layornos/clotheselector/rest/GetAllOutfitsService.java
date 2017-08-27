@@ -28,6 +28,7 @@ public class GetAllOutfitsService {
 		
 		for(Outfit outfit : outfits) {
 			JSONObject jsonOutfit = new JSONObject();	
+			jsonOutfit.put("id", outfit.id);
 			jsonOutfit.put("name", outfit.name);
 			jsonOutfit.put("season", outfit.season);
 			jsonOutfit.put("rain", outfit.rain);
@@ -38,7 +39,7 @@ public class GetAllOutfitsService {
 		
 		response.put("outfits", array);
 		
-		String result = "@Produces(\"application/json\") Output: " + response;
+		String result = ""+response;
 		return Response.status(200).entity(result).build();
 	}
 }

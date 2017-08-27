@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="outfits/search/outfit" method="post"
+		enctype="multipart/form-data">
+		<h1>Search Outfit</h1>
+		Season<br> <select name="season">
+			<option value="SPRING">Spring</option>
+			<option value="SUMMER">Summer</option>
+			<option value="AUTUMN">Autumn</option>
+			<option value="WINTER">Winter</option>
+		</select><br> 
+		Occasion<br> <input type="text" id="occasion" name="occasion"><br>
+		Rain<br> <input type="checkbox" id="rain" name="rain"><br>
+		<input type="submit" value="Search Outfit" />
+	</form>
+</body>
+</html>
