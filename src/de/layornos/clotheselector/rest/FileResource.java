@@ -77,6 +77,7 @@ public class FileResource {
 			rain = "off";
 		id = randomGenerator.nextInt(999999999);
 		String fileName = id +"_"+outfit + "_" + season + "_" + occasion + "_" + rain;
+
 		String fileLocation = servletContext.getRealPath("/img/")  + fileName
 				+ formData.getFileName().substring(formData.getFileName().indexOf('.'));
 		System.out.println(fileLocation);

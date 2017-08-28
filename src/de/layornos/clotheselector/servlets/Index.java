@@ -50,12 +50,12 @@ public class Index extends HttpServlet {
 				"			<option value=\"SUMMER\">Summer</option>\n" + 
 				"			<option value=\"AUTUMN\">Autumn</option>\n" + 
 				"			<option value=\"WINTER\">Winter</option>\n" + 
-				"		</select><br> \n" + 
-				"		Occasion<br> <input class=\"w3-input\" type=\"text\" id=\"occasion\" name=\"occasion\"><br>\n" + 
-				"		Rain<br> <input class=\"w3-check\" type=\"checkbox\" id=\"rain\" name=\"rain\"><br>\n" + 
+				"		</select><br><br> \n" + 
+				"		Occasion<br> <input class=\"w3-input\" type=\"text\" id=\"occasion\" name=\"occasion\"><br><br>\n" + 
+				"		<input class=\"w3-check\" type=\"checkbox\" id=\"rain\" name=\"rain\"> Rain<br><br>\n" + 
 				"</form>\n" +
 				"<div class=\"w3-container\" style=\"width:100%\">\n"+
-				"   \t<button class=\"w3-button w3-display-bottomleft w3-teal\" onclick=\"document.forms[0].submit();\">Search Outfit</button>\n"+
+				"	\t<button class=\"w3-button w3-display-bottomleft w3-teal\" onclick=\"document.forms[0].submit();\">Search Outfit</button>\n"+
 				"	\t<button class=\"w3-button w3-display-bottommiddle w3-teal\" title=\"Add Outfit\" onclick=\"return gotoAddOutfit()\">Add Outfit</button>\n" +
 				"	\t<button class=\"w3-button w3-display-bottomright w3-teal\" title=\"Show all Outfits\" onclick=\"return gotoAllOutfits()\">Show all Outfits</button>\n" +
 				"</div>\n"+

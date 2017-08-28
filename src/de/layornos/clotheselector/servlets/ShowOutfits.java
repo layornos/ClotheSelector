@@ -70,7 +70,8 @@ public class ShowOutfits extends HttpServlet {
 		
 		List<String> shortenImagePaths = new ArrayList<String>();
 		for(String s : imagePaths) {
-			shortenImagePaths.add(s.substring(s.indexOf("img/")));
+			if(s.contains("img"))
+				shortenImagePaths.add(s.substring(s.indexOf("img/")));
 		}
 		return shortenImagePaths;
 	}
