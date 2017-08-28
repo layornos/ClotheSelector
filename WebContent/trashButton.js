@@ -34,3 +34,16 @@ function gotoAddOutfit(){
 function gotoAllOutfits(){
 	location.href = "showOutfits";
 }
+
+function uploadImage(){
+	if(allFormElementsFilled())
+		document.forms[0].submit();
+}
+
+function allFormElementsFilled(){
+	if(($("#occasion").val().length == 0) &&
+			($("#outfit").val().length == 0))
+		return false;
+	else
+		return true;
+}
