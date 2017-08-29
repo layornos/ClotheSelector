@@ -1,5 +1,6 @@
 package de.layornos.clotheselector.servlets;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -57,6 +58,9 @@ public class ShowOutfits extends HttpServlet {
 	private List<String> getAllImageInIMG() {
 		List<String> imagePaths = new ArrayList<String>();
 		Consumer<Path> pathFiller = (Path p) -> imagePaths.add(p.toString()); 
+		File f = new File(getServletContext().getRealPath("/img"));
+		if(!f.exists())
+			f.mkdir();
 		try (Stream<Path> paths = Files.walk(Paths.get(getServletContext().getRealPath("/img")))) {
 		    paths
 		        .filter(Files::isRegularFile)
@@ -70,8 +74,10 @@ public class ShowOutfits extends HttpServlet {
 		
 		List<String> shortenImagePaths = new ArrayList<String>();
 		for(String s : imagePaths) {
-			if(s.contains("img"))
-				shortenImagePaths.add(s.substring(s.indexOf("img/")));
+			if(s.contains("img")) {
+				String path = s.substring(s.indexOf("img"));
+				shortenImagePaths.add(path);
+			}
 		}
 		return shortenImagePaths;
 	}

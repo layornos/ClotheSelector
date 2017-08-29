@@ -40,7 +40,7 @@ public class AddOutfit extends HttpServlet {
 				"</head>\n" + 
 				"<body>\n" + 
 				"<div class=\"w3-container w3-text-teal\"><h1>Clothe Selector</h1></div>" +	
-				"<div class=\"w3-container\"><h2>Search Outfit</h2></div>\n" +
+				"<div class=\"w3-container\"><h2>Add Outfit</h2></div>\n" +
 				"	<form class=\"w3-panel\" action=\"outfits/restwb/upload\" method=\"post\"\n" + 
 				"		enctype=\"multipart/form-data\">\n" +
 				"		<br> Outfit<br> <input type=\"text\" id=\"outfit\" name=\"outfit\"><br><br>\n" + 

@@ -16,7 +16,7 @@ function addOutfit() {
 		
 //    console.log(rain);
 	
-	var url = "http://localhost:8080/ClotheSelector/outfits/addoutfitservice/"+outfit+"/"+season+"/"+rain+"/"+occasion;
+	var url = "http://192.168.1.10:8080/ClotheSelector/outfits/addoutfitservice/"+outfit+"/"+season+"/"+rain+"/"+occasion;
 	console.log(url);
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", url, false);

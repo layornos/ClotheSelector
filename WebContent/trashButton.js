@@ -6,7 +6,7 @@ function goto(){
 	var nameOfDiv = $(".mySlides").attr('name');
 	nameOfDiv = nameOfDiv.replace("../../", "");
 	nameOfDiv = nameOfDiv.replace(".jpg", "");
-	nameOfDiv = nameOfDiv.substring(nameOfDiv.indexOf('/')+1, nameOfDiv.indexOf('_'));
+	nameOfDiv = nameOfDiv.substring(nameOfDiv.indexOf('\\')+1, nameOfDiv.indexOf('_'));
 	
 	$.ajax({
 		   type: "GET",
@@ -36,8 +36,9 @@ function gotoAllOutfits(){
 }
 
 function uploadImage(){
-	if(allFormElementsFilled())
+	if(allFormElementsFilled()){
 		document.forms[0].submit();
+	}
 }
 
 function allFormElementsFilled(){
